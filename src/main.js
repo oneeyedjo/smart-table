@@ -59,14 +59,15 @@ const sampleTable = initTable(
 
 const applySearching = initSearching("search");
 
+const applyFiltering = initFiltering(sampleTable.filter.elements, { 
+  searchBySeller: indexes.sellers  
+}); 
+
 const applySorting = initSorting([  
     sampleTable.header.elements.sortByDate,
     sampleTable.header.elements.sortByTotal
 ]);
 
-const applyFiltering = initFiltering(sampleTable.filter.elements, { 
-  searchBySeller: indexes.sellers  
-}); 
 
 // @todo: инициализация
 const applyPagination = initPagination(
