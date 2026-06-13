@@ -6,7 +6,7 @@ export function initSearching(searchField) {
         ['skipEmptyTargetValues'],
 
         [rules.searchMultipleFields (searchField, ['date', 'customer', 
-        'seller'], false)]
+        'seller', 'total'], false)]
     );
 
     return (data, state, action) => {
